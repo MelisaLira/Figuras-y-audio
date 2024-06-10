@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de Audio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            background-color: #000;
+            color: #fff;
+        }
+        canvas {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <button id="start-audio">Iniciar micrófono</button>
+    <select id="figure-selector">
+        <option value="original">Figura Original</option>
+        <option value="cube">Cubo</option>
+        <option value="sphere">Esfera</option>
+        <option value="torus">Toroide</option>
+        <option value="pyramid">Pirámide</option>
+        <option value="cone">Cono</option>
+        <option value="cylinder">Cilindro</option>
+        <option value="ellipsoid">Elipsoide</option>
+
+    <!-- Figuras con detalles por corregir 
+        <option value="tetrahedron">Tetraedro</option>
+        <option value="dodecahedron">Dodecaedro</option>
+        <option value="icosahedron">Icosaedro</option>
+        <option value="octahedron">Octaedro</option>
+        <option value="torusknot">Nudo Toroidal</option>
+        <option value="helix">Hélice</option>
+         -->
+        <option value="plane">Plano</option>
+    </select>
+    <script src="lab.js"></script>
+</body>
+</html>
